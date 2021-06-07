@@ -19,7 +19,7 @@ body {
     justify-content: center;
     margin-top: 120px;
     font-family: 'Montserrat', sans-serif;
-    background-image: url('/Captain.png');
+    background-image: url('../Captain.png');
   background-repeat: no-repeat;
 
 
