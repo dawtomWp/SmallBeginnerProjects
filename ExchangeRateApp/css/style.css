@@ -13,7 +13,7 @@ body {
     align-items: center;
     min-height: 100vh;
     font-family: 'Montserrat', sans-serif;
-    background-image:url('/Jaguar.png');
+    background-image:url('../Jaguar.png');
     background-position: center;
 
 }
