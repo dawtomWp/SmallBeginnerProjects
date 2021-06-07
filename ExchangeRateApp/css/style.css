@@ -1,0 +1,121 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --first-color: rgb(250,20,6);
+    --second-color: rgb(190,210,197);
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-image:url('/Jaguar.png');
+    background-position: center;
+
+}
+.wrapper {
+    padding:50px;
+    width: 800px;
+    background: linear-gradient(#031603, #3e4347);
+    color: #fff;
+    text-align:center;
+    border: 1px solid #1C232D;
+    box-shadow: 0 0 15px #181c1d;
+    border-radius: 15px;
+ 
+}
+.wrapper h1 {
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+.wrapper p {
+    margin-bottom: 50px;
+    font-size: 26px;
+    font-weight: 200;
+    color: rgb(255, 230, 0);
+}
+.app-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app-body input {
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 40px;
+}
+.app-body input, .app-body select {
+    color: #fff;
+    border:none;
+    background: none;
+    text-align: center;
+
+}
+.app-body select {
+    padding: 10px 20px;
+    font-size: 36px;
+    cursor: pointer;
+    border: 1px solid #383333
+}
+.app-body input:focus, .app-body select:focus {
+    outline: none;
+    color: rgb(255, 230, 0);
+}
+.app-body option {
+    color: #00aac0;
+}
+.swap {
+    align-self: flex-end;
+    margin:5px;
+    padding: 5px 50px;
+    background:linear-gradient(45deg,#00aac0,rgb(0,233,50));
+    font-size: 40px;
+    border:none;
+    border-radius:25px;
+    color: rgb(255, 230, 0);
+    cursor: pointer;
+}
+.swap:focus {
+    outline: none;
+    background:linear-gradient(45deg,#018da0,rgb(1, 199, 44));
+}
+.wrapper .rate-info {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+@media (max-width:868px) {
+    .wrapper {
+        width: 500px;
+    }
+}
+@media (max-width:576px) {
+    .wrapper {
+        width: 370px;
+    }
+    .app-body input, .app-body select {
+        font-size: 17px;
+    }
+    .wrapper .rate-info {
+        font-size: 20px;
+    }
+}
+@media (max-width:380px) {
+    .wrapper {
+        width: 300px;
+    }
+    .app-body input, .app-body select {
+        font-size: 17px;
+    }
+    .swap {
+        padding: 5px 20px;
+        font-size: 25px;
+    }
+    .wrapper .rate-info {
+        font-size: 15px;
+    }
+
+}
