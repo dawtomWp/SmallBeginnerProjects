@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finances Manager</title>
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1><i class="fas fa-wallet"> Wallet</i></h1>
+        <p>Your personal finances manager</p>
+    </header>
+
+    <main>
+        <section class="transactions">
+            <h2 class="title">Transactions list</h2>
+            <div class="transaction-list">
+
+                <div>
+                    
+                </div>
+                <div class="income-div">
+                    <h3>Income</h3>
+                    <div class="income-area">
+                        <div class="transaction">
+                        <p class="transaction-name"><i class="fas fa-money-bill-wave"></i>Salary</p>
+                        <p class="transaction-amount">3500zł <button class="delete"><i class="fas fa-times"></i></button></p>
+                    </div>
+                        
+                    </div>
+                   
+                </div>
+
+                <div class="expenses-div">
+                    <h3>Expenses</h3>
+                    <div class="expenses-area">
+            
+                 
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+
+        <section class="options">
+            <div>
+                <h2 class="title">Available Money</h2>
+                <p class="available-money">0zł</p>
+            </div>
+
+            <div class="controls">
+                <button class="add-transaction"> <i class="fas fa-plus"></i> Add transaction</button>
+                <button class="delete-transaction"><i class="fas fa-trash-alt"> Delete All</i></button>
+            </div>
+
+            <div class="style-section">
+                <h2 class="title">Choose Style:</h2>
+                <div class="color-buttons">
+                    <button class="light"></button>
+                    <button class="dark"></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <div class="add-transaction-panel">
+        <h2 class="title">Add new transaction</h2>
+
+        <label for="name">Name:</label>
+        <small>(Type transaction name)</small>
+        <input type="text" id="name">
+
+        <label for="amount">Amount:</label>
+        <small>(Type transaction amount)</small>
+        <input type="number" id="amount"min="0" oninput="this.value = 
+        !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null">
+
+        <label for="category">Choose Category</label>
+        <small>( [ + ] means income, while [ - ] means expense )</small>
+        <select id="category">
+            <option value='0'  selected disabled></option>
+            <option value='1' >[ + ] Income</option>
+            <option value='2' >[ - ] Shopping</option>
+            <option value='3' >[ - ] Food</option>
+            <option value='4' >[ - ] Hobby</option>
+        </select>
+
+        <div class="panel-buttons">
+            <button class="save"><i class="fas fa-save"></i> Save</button>
+            <button class="cancel"><i class="far fa-window-close"></i> Cancel</button>
+        </div>
+    </div>
+    
+
+
+    <script src='js/Operation.js'></script>
+    <script src="js/Add.js"></script>
+    <script src="js/Creator.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
