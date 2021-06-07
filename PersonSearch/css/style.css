@@ -17,7 +17,7 @@ body {
           align-items: center;
   font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
-  background: url("./img/mainBigBgc.svg");
+  background: url("../img/mainBigBgc.svg");
   background-size: cover;
 }
 
@@ -77,7 +77,7 @@ select {
   height: 350px;
   padding: 20px 40px;
   font-family: 'Akaya Telivigala', cursive;
-  background-image: url("./img/mainBgc.svg");
+  background-image: url("../img/mainBgc.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
