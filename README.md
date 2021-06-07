@@ -3,6 +3,8 @@ A few projects  from the beginning of my programming learning
 
 https://dawtomwp.github.io/SmallBeginnerProjects/MagicBall/
 
+https://dawtomwp.github.io/SmallBeginnerProjects/Notepad/
+
 https://dawtomwp.github.io/SmallBeginnerProjects/TonyStarkBillsplitter/
 
 https://dawtomwp.github.io/SmallBeginnerProjects/Calculator/
