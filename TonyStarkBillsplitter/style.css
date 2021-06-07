@@ -1,0 +1,118 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body, html {
+    height: 100%;
+    font-family: 'Marvel', sans-serif;
+    font-weight: 700;
+  }
+.bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/Tony.svg");
+
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.upperPart:before {
+  content: '';
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/Tony.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top:0;
+  position: absolute;
+  opacity: .2;
+}
+.wrapper {
+  min-height: 694px;
+  width: 600px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgb(184, 0, 0)
+}
+.upperPart {
+    display: flex;
+    position: relative;
+    background-color:rgb(187, 0, 0);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: .8;
+    height: 200px;
+    color: white;
+}
+.upperPart h1 {
+  text-transform: uppercase;
+}
+.upperTop p {
+    
+    margin-top: 10px;
+}
+.centerPart {
+    padding: 20px 20px;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+input,select {
+    margin-bottom: 25px;
+    padding: 5px 10px;
+    width: 100%;
+    border:none;
+    border-bottom: 1px solid;
+}
+input:focus, select:focus {
+    outline:none;
+}
+select { 
+    background-image:
+      linear-gradient(45deg, transparent 50%, rgba(0, 0, 0, 0.63) 60%),
+      linear-gradient(135deg, rgba(0, 0, 0, 0.63) 40%, transparent 50%) !important;
+    background-position:
+      calc(100% - 15px) 14px,
+      calc(100% - 10px) 14px,
+      100% 0;
+    background-size:
+      5px 5px,
+      5px 5px;
+    background-repeat: no-repeat;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  .count {
+      display: block;
+      margin:20px auto;
+      padding: 15px 10px;
+      width: 60%;
+      font-size: 24px;
+      color: #fff;
+      border:none;
+      cursor: pointer;
+      outline: none;
+      background-color: rgb(211, 64, 6);
+      transition: background-color .4s
+  }
+  .count:hover {
+      background-color:rgb(253, 99, 38);
+  }
+  .cost-info {
+    display: none;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .cost {
+  
+    color:rgb(253, 99, 38);
+  }
