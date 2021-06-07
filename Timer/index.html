@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="counter-app">
+        <div class="settings">
+            <h1>Settings</h1>
+
+            <label for="event-name">Event name</label>
+            <input type="text" id='event-name' value='Trip to Rome'>
+            <table class="date">
+                <tr>
+                    <td><label for="event-day">Day</label></td>
+                    <td><label for="event-month">Month</label></td>
+                    <td><label for="event-year">Year</label></td>
+                </tr>
+                <tr>
+                    <td><input type="number" id='event-day' maxlength="2" value='5'></td>
+                    <td><input type="number" id='event-month' maxlength="2" value='6'></td>
+                    <td><input type="number" id='event-year' maxlength="4" value='2022'></td>
+                </tr>
+            </table>
+
+            <label for="event-image"></label>
+            <small>(Paste your link to add a photo)</small>
+            <input type="text" id='event-image' value='rome.png'>
+           
+            <button class="save">Save</button>
+        </div>
+
+
+        <div class="app-body">
+            <div class="image-section">
+                <div class="settings-btn"><i class="fas fa-sliders-h"></i></div>
+            </div>
+            <div class="time-section">
+                <h3><span class="event">Trip to Rome</span>:</h3>
+         
+                <div class="time-cards">
+
+
+                    <div class="card">
+                        <p class="days-count number">1</p>
+                        <p class="card-title">Days</p>
+                    </div>
+
+                    <div class="card">
+                        <p class="hours-count number">1</p>
+                        <p class="card-title">Hours</p>
+                    </div>
+
+                    <div class="card">
+                        <p class="minutes-count number">1</p>
+                        <p class="card-title">Minutes</p>
+                    </div>
+
+                    <div class="card">
+                        <p class="seconds-count number">1</p>
+                        <p class="card-title">Seconds</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+<script type='module' src="js/script.js"></script>
+</body>
+
+</html>
