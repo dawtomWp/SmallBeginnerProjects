@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PersonSearch Project</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+     <div class="wrapper">
+         <div class="header">
+             <h1 class="welcome"></h1>
+             <button class="welcome-btn">Search</button>
+             <div class="shadow">
+                 <h1><span class='icon-heart-1'></span>Dinter </h1>
+                 <input type="text" class="search" placeholder="Search person">
+                 <h5>Choose City</h5>
+                 <select class='search' id='city'>
+                     <option data-filter="all">All</option>
+                    <option data-city='tokyo'>Tokyo</option>
+                    <option data-city='warsaw'>Warsaw</option>
+                    <option data-city='atlanta'>Atlanta</option>
+                    <option data-city='venice'>Venice</option>
+                   
+                  </select>
+                  <h5>Choose Gender</h5>
+                  <select class='search' id='gender'>
+                    <option data-gender="all">All</option>
+                   <option data-gender='female'>Female</option>
+                   <option data-gender='male'>Male</option>
+           
+                 </select>
+             </div>
+         </div>
+
+             <div class="country-list">
+                 <h2>Your friends</h2>
+                 <ul>
+                 <li data-gender='male'data-city ='warsaw'>Adam <span class="icon-phone"> Call </span></li>
+                 <li data-gender='female'data-city ='tokyo'>Yua <span class="icon-phone"> Call </span></li>
+                 <li data-gender='male'data-city ='venice'>Stefano <span class="icon-phone"> Call </span></li>
+                 <li data-gender='female'data-city ='atlanta'>Alice <span class="icon-phone"> Call </span></li>
+                 <li data-gender='female'data-city ='tokyo'>Ichika <span class="icon-phone"> Call </span></li>
+                 <li data-gender='male' data-city ='venice'>Francesco <span class="icon-phone"> Call </span></li>
+                 <li data-gender='female'data-city ='atlanta'>Kate <span class="icon-phone"> Call </span></li>
+                 <li data-gender='male'data-city ='warsaw'>Marcin <span class="icon-phone"> Call </span></li>
+                 <li data-gender='male' data-city ='tokyo'>Akinari <span class="icon-phone"> Call </span></li>
+                 <li data-gender='female' data-city ='warsaw'>Dorota <span class="icon-phone"> Call </span></li>
+                 <li data-gender='male' data-city ='venice'>Luigi <span class="icon-phone"> Call </span></li>
+                 <li data-gender='female'data-city ='venice'>Aurora <span class="icon-phone"> Call </span></li>
+                 <li data-gender='female' data-city ='atlanta'>Maria <span class="icon-phone"> Call </span></li>
+                 </ul>
+             </div>
+      
+       </div>
+    
+
+
+
+<script src="js/script.js"></script>
+</body>
+</html>

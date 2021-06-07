@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    background:url('/img/mainBigBgc.svg');
+    background-size: cover;
+}
+select { // ZMIENIONY WYGLĄD STRZAŁEK PRZY ROZWIJANYCH INPUTACH
+    background-image:
+      linear-gradient(45deg, transparent 50%, rgba(255, 255, 255, 0.63) 60%),
+      linear-gradient(135deg, rgba(255, 255, 255, 0.63) 40%, transparent 50%) !important;
+    background-position:
+      calc(100% - 15px) 14px,
+      calc(100% - 10px) 14px,
+      100% 0;
+    background-size:
+      5px 5px,
+      5px 5px;
+    background-repeat: no-repeat;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  .icon-heart-1 {
+
+      font-size: 12px;;
+  }
+  ::placeholder {
+      color: white;
+  }
