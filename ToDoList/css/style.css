@@ -1,0 +1,317 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --deep-dark: rgb(26, 26, 26);
+    --light-dark: rgb(79, 82, 92);
+    --light-blue: rgb(0, 132, 255);
+    --dark-blue: rgb(2, 84, 161);
+    --light: rgb(245, 245, 245);
+}
+
+
+body {
+    display: flex;
+    overflow-x: hidden;
+    justify-content: center;
+    margin-top: 120px;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('/Captain.png');
+  background-repeat: no-repeat;
+
+
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: var(--light);
+    text-transform: uppercase;
+}
+
+.todo {
+    position: relative;
+    width: 800px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 4px 4px 5px rgba(82, 82, 82, .4);
+    border-radius: 5px;
+}
+
+.header {
+    padding: 40px;
+    border-radius: 5px 5px 0 0;
+    background-image: linear-gradient(340deg, #045de9 0%, #09c6f9 100%);
+}
+
+.todo-input, .minute-input, .hours-input, .seconds-input {
+    width: 40%;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 5px;
+    color: var(--light-dark);
+    background-color: var(--light);
+}
+.minute-input, .hours-input, .seconds-input {
+    width: 15%;
+}
+
+
+.alert-info {
+    margin-top: 20px;
+    visibility: hidden;
+    color: var(--dark-blue);
+}
+
+.add-btn {
+    padding: 10px 22px;
+    border: none;
+    border-radius: 5px;
+    color: var(--deep-blue);
+    background-color: var(--light);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color .3s, color .3s;
+}
+.taskTime {
+    margin-right: 10px;
+}
+
+.add-btn:hover {
+    color: #fff;
+    background-color: var(--light-dark);
+}
+
+.todo-list {
+    padding: 20px 0;
+}
+
+.todo-list h3 {
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    padding-left: 20px;
+    text-align-last: left;
+    list-style: none;
+    background-color: var(--light);
+}
+
+.tools {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tools button {
+    padding: 10px 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.tools button:hover {
+    background-color: #ddd;
+}
+
+.complete {
+    color: var(--light-blue);
+}
+
+.edit {
+    font-weight: bold;
+    color: rgb(15, 179, 69);
+}
+
+.delete {
+    color: tomato;
+}
+
+.completed {
+    font-size: 12px;
+    font-style: italic;
+    color: var(--light-dark);
+    text-decoration: line-through;
+}
+
+.popup {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    color: var(--light);
+    background-color: var(--light-dark);
+    border-radius: 5px;
+}
+
+.popup h3 {
+    padding: 20px;
+}
+
+.popup-info {
+    margin-bottom: 20px;
+    color: var(--light);
+}
+
+.popup-body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    padding: 10px;
+}
+
+.popup-input {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: var(--light-dark);
+    background-color: var(--light);
+}
+
+.popup-btn {
+    display: inline-block;
+    width: 30%;
+    padding: 10px 22px;
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+    color: var(--deep-dark);
+    background-color: var(--light);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color .3s, color .3s;
+}
+
+.popup-btn:hover {
+    color: #fff;
+    background-color: var(--light-blue);
+}
+.info-btn {
+    width: 100%;
+    text-align: end;
+    background-color:transparent;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+}
+.info-btn:hover, .info-btn:focus {
+    outline: none;
+    color: var(--light);
+}
+.error-todo {
+    visibility: hidden;
+    margin-top: 10px;
+    color: #fff;
+}
+.successTask {
+    background-color: #68bafdcb !important;
+}
+.loseTask {
+    background-color: rgb(230, 113, 113) !important;
+}
+.infoModal {
+  display: none;
+    position: absolute;
+    color: white;
+    padding: 80px 20px;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: rgb(228, 76, 76);
+    box-shadow: 0px 0px 4px black;
+    top: 43%;
+}
+.infoModal h2 {
+    font-size: 34px
+}
+.infoModal h2,.infoModal h3  {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.infoModal h5{
+    display: flex;
+  
+    color: rgb(79, 133, 235);
+    padding: 8px 0;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.fas .fa {
+    cursor: pointer;
+}
+.infoModal i p, .infoModal h5 p{
+    color: white;
+    margin-left: 20px;
+    margin-right: 50px;
+    text-align: end;
+} 
+.fab.fa-whmcs {
+transition: color .3s;
+}
+.fab.fa-whmcs:hover {
+ color:rgb(228, 76, 76);
+ cursor: pointer;
+}
+.modal-animation {
+    animation: show-modal .5s;
+}
+@keyframes show-modal {
+    0% {
+        opacity:0
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@media (max-width:768px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+    .todo-input, .minute-input, .hours-input, .seconds-input {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .add-btn {
+        width: 40%;
+        align-self: center;
+    }
+    .todo {
+        width: 600px;
+    }
+    .taskTime {
+        display: none;
+    }
+    li {
+        font-size: 12px;
+    }
+}
+@media (max-width:424px) {
+    .todo {
+        width: 310px;
+    }
+    li {
+        font-size: 8px;
+    }
+    .tools button {
+        font-size: 8px;
+    }
+
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captain ToDo</title>
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="todo">
+        <div class="header">
+            <button class="info-btn"><i class="fab fa-whmcs"></i></button>
+            <h1>Captain ToDo List</h1>
+            <input type="text" class='todo-input' placeholder="Type task name" maxlength="15">
+            <input type="number" class='hours-input' placeholder="Hours" min=0 max=23>
+            <input type="number" class='minute-input' placeholder="Minutes" min=0 max=59>
+ 
+            <button class="add-btn">Add</button>
+            <p class="error-todo">Fill the blanks fields or use correct hours</p>
+        </div>
+
+        <div class="todo-list">
+            <h3>Task list</h3>
+            <p class="alert-info">No tasks on the list</p>
+
+            <ul>
+                <li id=1 class='successTask'>
+                    Morning saving the world
+                <div class="tools">
+             
+                    <p class="taskTime">Deadline:</p>
+                    <p class="yourHours">7</p>:
+                    <p class="yourMinutes">25</p>
+                    <button class="complete" disabled disabled>DONE IN TIME</button>
+                    <button class="edit">EDIT</button>
+                    <button class="delete"><i class="fas fa-times"></i></button>
+                </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="popup">
+        <h3>Edit task</h3>
+        <div class="popup-body">
+            <p class="popup-info"></p>
+            <input type="text" class="popup-input" placeholder ='Type new content'>
+            <button class="popup-btn accept">Save</button>
+            <button class="popup-btn cancel">Cancel</button>
+        </div>
+    </div>
+    
+    <div class="infoModal">
+        <h2>Tutorial</h2>
+        <h3 class="taskInfo">Add a task and check if you managed to complete it on time     </h3>
+            <h5 class="fas fa-check"><p>- Complete the task and see the result</p></h5>
+            <h5 class="fas fa-times"><p>- Cancel this task</p></h5>
+            <h5>EDIT <p>- Edit task</p></h5>
+            <h5>INPUTS <p>- Enter the task name, hour and minutes</p></h5>
+            <h5>ADD <p>- Add new task</p></h5>
+
+   
+    </div>
+
+
+
+
+<script type='module' src="js/script.js"></script>
+</body>
+
+</html>
