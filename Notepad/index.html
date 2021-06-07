@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitsune Notes</title>
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="menu">
+      <h1><i class="fas fa-sticky-note"></i>Kitsune Notes</h1>
+
+      <div class="menu-buttons">
+          <button class="add icon"><i class="fas fa-plus"></i>Add</button>
+          <button class="delete-all icon"><i class="fas fa-trash-alt"></i>Delete all</button>
+      </div>
+    </div>
+      <div class="note-area">
+
+
+     
+      </div>
+
+      <div class="note-panel">
+          <h2>Add note</h2>
+          <label for="category">Choose category</label>
+          <select id="category">
+              <option value="0" disabled selected>- Choose category -</option>
+              <option value="1">Shopping</option>
+              <option value="2">Work</option>
+              <option value="3">Family</option>
+          </select>
+          <label for="title">Type note title</label>
+          <input class="noteName" id='title'>
+
+          <label for="text">Type note content</label>
+          <textarea id="text"></textarea>
+
+          <p class="error">Incorrect or empty fields</p>
+
+          <div class="panel-buttons">
+              <button class="save icon"><i class="fas fa-save"></i> Save</button>
+              <button class="cancel icon"><i class="far fa-window-close"></i> Cancel</button>
+          </div>
+      </div>
+
+      <div class="note-delete-panel">
+        <h2>Delete All</h2>
+       <p>You really want delete all your notes ?</p>
+        <div class="delete-panel-buttons">
+            <button class="agree icon"><i class="fas fa-check"></i> Yes</button>
+            <button class="cancelDel icon"><i class="far fa-window-close"></i> No</button>
+        </div>
+    </div>
+
+
+  
+
+
+<script src="js/Panel.js"></script>
+<script src="js/Creator.js"></script>
+<script src="js/Cleaner.js"></script>
+
+<script type='module' src="js/script.js"></script>
+</body>
+
+</html>

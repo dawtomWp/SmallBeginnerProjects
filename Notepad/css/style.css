@@ -1,0 +1,176 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: rgb(193,228,241);
+    --second-color:rgb(2, 57, 160);
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('/fox.png');
+  background-repeat: no-repeat;
+
+  color: var(--primary-color)
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    height: 120px;
+
+}
+.menu button, .note-panel .save, .note-panel .cancel, .note-delete-panel .agree, .note-delete-panel .cancelDel {
+    padding: 12px 25px;
+    background: none;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color .3s, color .3s;
+
+}
+.delete-panel-buttons .agree, .delete-panel-buttons .cancelDel {
+    color: var(--second-color);
+ 
+}
+.note-panel .save, .note-panel .cancel {
+    color: var(--second-color);
+}
+.menu button:hover, .note-panel .save:hover, .note-panel .cancel:hover, .cancelDel:hover, .agree:hover {
+    background-color: var(--primary-color);
+    color: var(--second-color);
+    outline:none;
+}
+
+.add {
+    margin-right: 10px;
+}
+.note-area {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 100%;
+}
+.delete-note {
+    outline: none;
+}
+
+.note {
+    margin: 40px 20px;
+    width: 240px;
+    transition: transform .3s;
+    border: 1px solid black;
+}
+.note:hover {
+    transform: scale(1.2);
+}
+.family {
+    background-color: yellow;
+}
+.work {
+    background-color: rgb(164, 233, 4);
+}
+.shopping {
+    background-color:rgb(247, 190, 4);
+}
+button i {
+    margin-right: 5px;
+}
+.fa-sticky-note {
+    margin-right: 15px;
+}
+.note-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: black;
+    background-color: rgba(0,0,0, .06);
+}
+.note-header .delete-note {
+    background: none;
+    border:none;
+    cursor:pointer;
+    font-size: 24px;
+}
+
+.note-body {
+    padding: 20px 15px;
+    font-size: 14px;
+    color: black;
+}
+.note-panel, .note-delete-panel {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-color:#fff;
+    color: var(--second-color);
+    padding: 40px 0;
+    width: 500px;
+    border-radius: 5px;
+}
+
+.note-panel h2, .note-delete-panel h2 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.note-delete-panel p {
+    margin-bottom: 20px;
+}
+.note-panel label {
+    margin-bottom:10px;
+}
+.note-panel #text, .note-panel #category, .note-panel #title {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 90%;
+    max-height: 380px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid var(--second-color)
+}
+.note-panel .error {
+    margin-bottom: 20px;
+    color: red;
+    visibility: hidden;
+}
+@media (max-width:768px) {
+    .note-area {
+        justify-content: center;
+    }
+}
+@media (max-width: 600px) {
+    .menu h1 {
+        font-size: 20px;
+    }
+    .menu button, .note-panel .save, .note-panel .cancel, .note-delete-panel .agree, .note-delete-panel .cancelDel {
+        padding: 8px 18px;
+    }
+    .note-panel {
+        width: 400px;
+    }
+}
+@media (max-width: 476px) {
+    .menu {
+        flex-direction: column;
+       
+    }
+    .menu h1 {
+        margin-bottom: 20px;
+    }
+    .note-panel {
+        width: 300px;
+    }
+}
